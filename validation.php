@@ -42,6 +42,18 @@ return [
     'exists'               => 'O valor selecionado para o campo :attribute é inválido.',
     'file'                 => 'O campo :attribute deve conter um arquivo.',
     'filled'               => 'O campo :attribute é obrigatório.',
+    'gt' => [
+        'numeric' => 'O campo :attribute deve ser maior que :value.',
+        'file' => 'O campo :attribute deve ser maior que :value kilobytes.',
+        'string' => 'O campo :attribute deve ser maior que :value caracteres.',
+        'array' => 'O campo :attribute deve ter mais que :value items.',
+    ],
+    'gte' => [
+        'numeric' => 'O campo :attribute deve ser maior ou igual a :value.',
+        'file' => 'O campo :attribute deve ser maior ou igual a :value kilobytes.',
+        'string' => 'O campo :attribute deve ser maior ou igual a :value caracteres.',
+        'array' => 'O campo :attribute deve ter :value items ou mais.',
+    ],
     'image'                => 'O campo :attribute deve conter uma imagem.',
     'in'                   => 'O campo :attribute não contém um valor válido.',
     'in_array'             => 'O campo :attribute não existe em :other.',
@@ -50,6 +62,18 @@ return [
     'ipv4'                 => 'O campo :attribute deve conter um IPv4 válido.',
     'ipv6'                 => 'O campo :attribute deve conter um IPv6 válido.',
     'json'                 => 'O campo :attribute deve conter uma string JSON válida.',
+    'lt' => [
+        'numeric' => 'O campo :attribute deve ser menor que :value.',
+        'file' => 'O campo :attribute deve ser menor que :value kilobytes.',
+        'string' => 'O campo :attribute deve ser menor que :value caracteres.',
+        'array' => 'O campo :attribute deve ter menos do que :value items.',
+    ],
+    'lte' => [
+        'numeric' => 'O campo :attribute deve ser menor ou igual a :value.',
+        'file' => 'O campo :attribute deve ser menor ou igual a :value kilobytes.',
+        'string' => 'O campo :attribute deve ser menor ou igual a :value caracteres.',
+        'array' => 'O campo :attribute não deve ter mais do que :value items.',
+    ],
     'max'                  => [
         'numeric' => 'O campo :attribute não pode conter um valor superior a :max.',
         'file'    => 'O campo :attribute não pode conter um arquivo com mais de :max kilobytes.',
